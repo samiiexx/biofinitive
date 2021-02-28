@@ -1,10 +1,26 @@
 // Navigation Menu Toggler
-var menuToggle = document.querySelector(".toggle");
-var showcase = document.querySelector(".showcase");
+// var menuToggle = document.querySelector(".toggle");
+// var showcase = document.querySelector(".showcase");
 
-menuToggle.addEventListener("click", function () {
-    menuToggle.classList.toggle("active");
-    showcase.classList.toggle("active");
+// menuToggle.addEventListener("click", function () {
+//     menuToggle.classList.toggle("active");
+//     showcase.classList.toggle("active");
+// });
+
+//Smooth Scroll
+$(".nav .nav-link").on("click", function (e) {
+    if (this.hash !== "") {
+        e.preventDefault();
+
+        const hash = this.hash;
+
+        $("html, body").animate(
+            {
+                scrollTop: $(hash).offset().top,
+            },
+            800
+        );
+    }
 });
 
 // JQuery Scripts
