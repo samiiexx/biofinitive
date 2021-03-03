@@ -7,11 +7,21 @@ body {
     font-weight: $font-normal;
     color: $white;
     line-height: 1.35;
+    height: 100vh;
+    overflow: hidden;
 }
 
 a {
     text-decoration: none;
     color: $dark;
+}
+
+.scroll {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 .nav {
@@ -37,6 +47,7 @@ a {
 }
 
 .section {
+    scroll-snap-align: center;
     @include flex(center);
     width: 100%;
     height: 100vh;
