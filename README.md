@@ -1,5 +1,5 @@
 # Biofinitive Website
-Test project on scroll behaviour for Biofinitive
+Test project on scroll behaviour for Biofinitive with sticky navigation.
 
 ![Biofinitive](screenshot.jpg)
 
